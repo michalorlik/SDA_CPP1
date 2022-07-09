@@ -12,10 +12,10 @@ public:
 
 	void insertFront(int value); //wstaw wartosc na poczatek
 	void insertBack(int value); //wstaw wartosc na koniec //Praca Domowa
-	void insertAfter(int value, const unsigned int position); //wstaw wartosc w dowolnym miejscu
+	void insertAfter(int value, const unsigned int index); //wstaw wartosc w dowolnym miejscu
 
-	void removeValue(int value); //Praca Domowa
-	void remove(const unsigned int position); //Praca Domowa
+	void removeValue(int value);
+	void remove(const unsigned int index);
 	void clear();
 
 	int& operator[](const unsigned int index) const;
