@@ -12,5 +12,7 @@ int main()
     list.insertFront(1);
     list.insertFront(0);
 
-    std::cout << "Hello World!\n";
+    list.print();
+    list.clear();
+    list.print();
 }

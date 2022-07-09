@@ -7,15 +7,15 @@ public:
 	DoublyLinkedList(const DoublyLinkedList& other)=delete; // zabronienie kompulatorowi generowanie domyslnego copy c-tora 
 
 	unsigned int size() const; //policz ilosc elementow w liscie
-	bool empty() const;
+	bool empty() const; //true gdy head lub tail wskazuje na nullptr //Praca Domowa
 	void print() const;
 
 	void insertFront(int value); //wstaw wartosc na poczatek
-	void insertBack(int value); //wstaw wartosc na koniec
+	void insertBack(int value); //wstaw wartosc na koniec //Praca Domowa
 	void insertAfter(int value, const unsigned int position); //wstaw wartosc w dowolnym miejscu
 
-	void removeValue(int value);
-	void remove(const unsigned int position);
+	void removeValue(int value); //Praca Domowa
+	void remove(const unsigned int position); //Praca Domowa
 	void clear();
 
 	int& operator[](const unsigned int index) const;
