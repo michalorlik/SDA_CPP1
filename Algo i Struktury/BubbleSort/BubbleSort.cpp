@@ -8,7 +8,7 @@ void bubbleSort(int* tab, const unsigned int size)
     {
         swapped = false;
 
-        for (unsigned int i =0; i<size-1; ++i)
+        for (unsigned int i =0; i<size-1; ++i) //zadanie domowe: OPTYMALIZACJA: zrobic tak ¿eby nie ruszaj elemnetów koñcowych, po tej zmianie mo¿na usun¹c flagê swapped
         {
             if (tab[i] > tab[i+1])
             {
