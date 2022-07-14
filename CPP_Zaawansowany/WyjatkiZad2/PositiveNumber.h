@@ -1,4 +1,5 @@
 #pragma once
+
 class PositiveNumber
 {
 public:
@@ -17,14 +18,19 @@ public:
 	void add(double value);
 	void add(float value);
 	void add(int value);
+
 	void substract(double value);
 	void substract(float value);
 	void substract(int value);
 
-	PositiveNumber& operator+(const PositiveNumber& second);
-	PositiveNumber& operator-(const PositiveNumber& second);
-	PositiveNumber& operator+(double number);
-	PositiveNumber& operator-(double number);
+	//PositiveNumber& operator+(const PositiveNumber& second);
+	//PositiveNumber& operator-(const PositiveNumber& second);
+	// PositiveNumber num(10);
+	// num+10;
+	// std::cout << num.getValue(); //wypisa³oby 20
+	// 
+	//PositiveNumber& operator+(double number);
+	//PositiveNumber& operator-(double number);
 	//operator + - dla float i int
 	//oraz operator + i - poza klasa
 	PositiveNumber& operator=(const PositiveNumber& second);
@@ -34,3 +40,8 @@ private:
 
 };
 
+//te operatory nie zmieniaj¹ obiektów klasy PositiveNumber
+PositiveNumber operator+(double first, const PositiveNumber& second); 
+PositiveNumber operator-(double first, const PositiveNumber& second);
+PositiveNumber operator+(const PositiveNumber& first, double second);
+PositiveNumber operator-(const PositiveNumber& first, double second);

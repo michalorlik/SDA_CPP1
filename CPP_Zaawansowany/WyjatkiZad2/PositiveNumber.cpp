@@ -72,10 +72,6 @@ void PositiveNumber::add(int value)
 	add(static_cast<double>(value));
 }
 
-PositiveNumber& PositiveNumber::operator+(const PositiveNumber& second)
-{
-	add(second.getValue());
-}
 
 void PositiveNumber::substract(double value)
 {
@@ -99,22 +95,60 @@ void PositiveNumber::substract(int value)
 	substract(static_cast<double>(value));
 }
 
-PositiveNumber& PositiveNumber::operator-(const PositiveNumber& second)
-{
-	this->substract(second.getValue());
-}
+//PositiveNumber& PositiveNumber::operator+(const PositiveNumber& second)
+//{
+//	add(second.getValue());
+//	return *this;
+//}
 
-PositiveNumber& PositiveNumber::operator+(double number)
-{
-	add(number);
-}
+//PositiveNumber& PositiveNumber::operator-(const PositiveNumber& second)
+//{
+//	this->substract(second.getValue());
+//	return *this;
+//}
 
-PositiveNumber& PositiveNumber::operator-(double number)
-{
-	substract(number);
-}
+//PositiveNumber& PositiveNumber::operator+(double number)
+//{
+//	add(number);
+//	return *this;
+//}
+//
+//PositiveNumber& PositiveNumber::operator-(double number)
+//{
+//	substract(number);
+//	return *this;
+//}
 
 PositiveNumber& PositiveNumber::operator=(const PositiveNumber& second)
 {
 	this->setValue(second.getValue());
+	return *this;
+}
+
+PositiveNumber operator+(double first, const PositiveNumber& second)
+{
+	PositiveNumber tmp;
+	tmp.setValue(second.getValue() + first);
+	return tmp;
+}
+
+PositiveNumber operator-(double first, const PositiveNumber& second)
+{
+	PositiveNumber tmp;
+	tmp.setValue(first - second.getValue());
+	return tmp;
+}
+
+PositiveNumber operator+(const PositiveNumber& first, double second)
+{
+	PositiveNumber tmp;
+	tmp.setValue(second + first.getValue());
+	return tmp;
+}
+
+PositiveNumber operator-(const PositiveNumber& first, double second)
+{
+	PositiveNumber tmp(first);
+	tmp.substract(second);
+	return tmp;
 }
