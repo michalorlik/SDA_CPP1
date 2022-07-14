@@ -45,3 +45,5 @@ PositiveNumber operator+(double first, const PositiveNumber& second);
 PositiveNumber operator-(double first, const PositiveNumber& second);
 PositiveNumber operator+(const PositiveNumber& first, double second);
 PositiveNumber operator-(const PositiveNumber& first, double second);
+PositiveNumber operator+(const PositiveNumber& first, const PositiveNumber& second);
+PositiveNumber operator-(const PositiveNumber& first, const PositiveNumber& second);

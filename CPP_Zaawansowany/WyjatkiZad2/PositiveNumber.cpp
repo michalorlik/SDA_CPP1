@@ -1,16 +1,17 @@
 #include "PositiveNumber.h"
 
-#include <string>
+#include <stdexcept>
+
+PositiveNumber::PositiveNumber()
+	: _value(0.0)
+{
+}
 
 PositiveNumber::PositiveNumber(double value)
 {
 	setValue(value);
 }
 
-PositiveNumber::PositiveNumber()
-	: PositiveNumber(0.0)
-{
-}
 
 PositiveNumber::PositiveNumber(float value)
 	: PositiveNumber(static_cast<double>(value))
@@ -31,7 +32,7 @@ void PositiveNumber::setValue(double value)
 {
 	if (value < 0)
 	{
-		throw std::string("NIE MOZE BYC LICZBA UJEMNA");
+		throw std::out_of_range("NIE MOZE BYC LICZBA UJEMNA");
 	}
 	else
 	{
@@ -53,7 +54,7 @@ void PositiveNumber::add(double value)
 {
 	if (value < 0 && abs(value) > getValue())
 	{
-		throw std::string("PROBUJESZ DODAC ZA DUZA LICZBE WYNIK BY£BY LICZBA UJEMNA");
+		throw std::out_of_range("PROBUJESZ DODAC ZA DUZA LICZBE WYNIK BY£BY LICZBA UJEMNA");
 	}
 	else
 	{
@@ -77,7 +78,7 @@ void PositiveNumber::substract(double value)
 {
 	if (abs(value) > getValue())
 	{
-		throw std::string("PROBUJESZ ODJAC ZA DUZA LICZBE WYNIK BY£BY LICZBA UJEMNA");
+		throw std::out_of_range("PROBUJESZ ODJAC ZA DUZA LICZBE WYNIK BY£BY LICZBA UJEMNA");
 	}
 	else
 	{
@@ -100,7 +101,7 @@ void PositiveNumber::substract(int value)
 //	add(second.getValue());
 //	return *this;
 //}
-
+//
 //PositiveNumber& PositiveNumber::operator-(const PositiveNumber& second)
 //{
 //	this->substract(second.getValue());
@@ -150,5 +151,19 @@ PositiveNumber operator-(const PositiveNumber& first, double second)
 {
 	PositiveNumber tmp(first);
 	tmp.substract(second);
+	return tmp;
+}
+
+PositiveNumber operator+(const PositiveNumber& first, const PositiveNumber& second)
+{
+	PositiveNumber tmp(first);
+	tmp.add(second.getValue());
+	return tmp;
+}
+
+PositiveNumber operator-(const PositiveNumber& first, const PositiveNumber& second)
+{
+	PositiveNumber tmp(first);
+	tmp.substract(second.getValue());
 	return tmp;
 }
