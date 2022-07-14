@@ -30,9 +30,21 @@ int main()
         }
         std::cout << "Poza petla";
     }
-    catch (std::out_of_range& error)
+    catch (const std::out_of_range& error)
     {
         std::cout << error.what() << std::endl;
+    }
+    catch (const std::bad_alloc& error)
+    {
+        std::cout << error.what() << std::endl;
+    }
+    catch (const std::exception& ex) //zlapanie kazdego wyjatku z biblioteki std
+    {
+        std::cout << "Unexpected exception caught: " << ex.what() << std::endl;
+    }
+    catch (...) //³apie ka¿dy obiekt rzucony, raczej nie powinnismy z tego korzystac
+    {
+        //nic nie mozemy zrobic ze zlapanym obiektem
     }
 
     std::cout << "Wartosc liczby poza petla" << a.getValue() << std::endl;

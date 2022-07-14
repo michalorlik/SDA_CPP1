@@ -78,7 +78,10 @@ void PositiveNumber::substract(double value)
 {
 	if (abs(value) > getValue())
 	{
-		throw std::out_of_range("PROBUJESZ ODJAC ZA DUZA LICZBE WYNIK BY£BY LICZBA UJEMNA");
+		//std::out_of_range exception("BLA BLA");
+		//throw exception; //rzucamy obiekt loklany
+
+		throw std::out_of_range("PROBUJESZ ODJAC ZA DUZA LICZBE WYNIK BY£BY LICZBA UJEMNA"); //rzucamy obiekt tymczasowy
 	}
 	else
 	{
