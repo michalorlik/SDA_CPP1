@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateBrudnopis", "Templa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateZad1", "TemplateZad1\TemplateZad1.vcxproj", "{5724B5E4-1AE0-4563-A2BF-B7731510562B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateZad4", "TemplateZad4\TemplateZad4.vcxproj", "{F00DDCD7-1D16-4905-AED5-A3196E583B86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{5724B5E4-1AE0-4563-A2BF-B7731510562B}.Release|x64.Build.0 = Release|x64
 		{5724B5E4-1AE0-4563-A2BF-B7731510562B}.Release|x86.ActiveCfg = Release|Win32
 		{5724B5E4-1AE0-4563-A2BF-B7731510562B}.Release|x86.Build.0 = Release|Win32
+		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Debug|x64.ActiveCfg = Debug|x64
+		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Debug|x64.Build.0 = Debug|x64
+		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Debug|x86.ActiveCfg = Debug|Win32
+		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Debug|x86.Build.0 = Debug|Win32
+		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Release|x64.ActiveCfg = Release|x64
+		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Release|x64.Build.0 = Release|x64
+		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Release|x86.ActiveCfg = Release|Win32
+		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
