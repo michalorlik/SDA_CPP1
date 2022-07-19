@@ -3,7 +3,7 @@
 
 int main()
 {
-    SimpleSmartPointer ptr(new int(7));
+    SimpleSmartPointer<int> ptr(new int(7));
 
     std::cout << "Wartosc pod wskaznikiem: " << *ptr;
 }

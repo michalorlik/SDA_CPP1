@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateZad1", "TemplateZad
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateZad4", "TemplateZad4\TemplateZad4.vcxproj", "{F00DDCD7-1D16-4905-AED5-A3196E583B86}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SmartPointer", "SmartPointer\SmartPointer.vcxproj", "{858B1183-B828-43B9-8BF2-ADFDFA1E915B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Release|x64.Build.0 = Release|x64
 		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Release|x86.ActiveCfg = Release|Win32
 		{F00DDCD7-1D16-4905-AED5-A3196E583B86}.Release|x86.Build.0 = Release|Win32
+		{858B1183-B828-43B9-8BF2-ADFDFA1E915B}.Debug|x64.ActiveCfg = Debug|x64
+		{858B1183-B828-43B9-8BF2-ADFDFA1E915B}.Debug|x64.Build.0 = Debug|x64
+		{858B1183-B828-43B9-8BF2-ADFDFA1E915B}.Debug|x86.ActiveCfg = Debug|Win32
+		{858B1183-B828-43B9-8BF2-ADFDFA1E915B}.Debug|x86.Build.0 = Debug|Win32
+		{858B1183-B828-43B9-8BF2-ADFDFA1E915B}.Release|x64.ActiveCfg = Release|x64
+		{858B1183-B828-43B9-8BF2-ADFDFA1E915B}.Release|x64.Build.0 = Release|x64
+		{858B1183-B828-43B9-8BF2-ADFDFA1E915B}.Release|x86.ActiveCfg = Release|Win32
+		{858B1183-B828-43B9-8BF2-ADFDFA1E915B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
