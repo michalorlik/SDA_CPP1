@@ -1,7 +1,7 @@
 #include <iostream>
 
 template<typename T>
-T max(T a, T b)
+T max(T a, T b) //szablon
 {
     //if (a > b)
     //{
@@ -16,13 +16,13 @@ T max(T a, T b)
 }
 
 template<typename T>
-T* max(T* a, T* b)
+T* max(T* a, T* b) // specjalizacja czêœciowa
 {
     return *a > *b ? a : b;
 }
 
 template<>
-char* max(char* a, char* b)
+char* max(char* a, char* b) //specjalizacja pe³na 
 {
     if (strcmp(a, b) > 0)
     {
@@ -35,10 +35,17 @@ char* max(char* a, char* b)
 }
 
 template<typename T> 
-T max(T* data, const unsigned int n)
+T max(T* data, const unsigned int size) //przeci¹¿anie szablonu
 {
     T tmpMax = data[0]; 
-    for()
+    for (unsigned int i = 1; i < size; ++i)
+    {
+        if (data[i] > tmpMax)
+        {
+            tmpMax = data[i];
+        }
+    }
+    return tmpMax;
 }
 
 int main()
@@ -55,6 +62,6 @@ int main()
     std::cout << "Wiekszy ³anuch: " << max("AAAzaabbba", "AAAccc") << std::endl;
 
     const unsigned int size = 10;
-    int tab[size] = { 0, 412, 123, 12, 32, 11, 23, 56, 1, 555 };
+    double tab[size] = { 0.0, 412.13, 3123.1, 12.33, 32, 11, 23, 56, 1, 555 };
     std::cout << "Najwiekszy element w tablicy:" << max(tab, size) << std::endl;
 }
