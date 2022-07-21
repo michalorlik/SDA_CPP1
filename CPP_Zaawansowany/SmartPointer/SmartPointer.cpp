@@ -32,8 +32,10 @@ int main()
     ptrFoo->print();
     (*ptrFoo).print();
 
-    SharedSmartPointer<int> ptr1(new int(66));
-    SharedSmartPointer<int> ptr2(ptr1);
-    print(ptr2);
+    SharedSmartPointer<int> ptr1(new int(66)); //licznik =1
+    SharedSmartPointer<int> ptr2(ptr1); //licznik =2
+    print(ptr2); ////licznik =3 w funkcji
+    //licznik = 2
 
-}
+}//licznik = 1
+//licznkik = 0

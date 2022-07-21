@@ -11,6 +11,11 @@ public:
         count++;
     }
 
+    int getCount() const
+    {
+        return count;
+    }
+
     int Release()
     {
         // Decrement the reference count and
