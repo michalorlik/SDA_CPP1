@@ -23,5 +23,11 @@
     <ClInclude Include="SimpleSmartPointer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SharedSmartPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RefCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
