@@ -36,6 +36,26 @@ public:
 		}
 	}
 
+	SharedSmartPointer<T>& operator= (const SharedSmartPointer<T>& sp)
+	{
+		if (this != &sp) //unikamy kopiowania samemu siebie
+		{
+			if (reference->Release() == 0)
+			{
+				delete _data;
+				delete reference;
+			}
+			//mamy czysyt this
+
+			//kopiujemy tak jak to robilismy w c-tro kopiujacym
+			_data = sp._data;
+			reference = sp.reference;
+			reference->AddRef();
+		}
+
+		return *this;
+	}
+
 	T& operator*()
 	{
 		return *_data;
