@@ -101,6 +101,6 @@ int main()
 
 	std::for_each(numbers.cbegin(), numbers.cend(), [&sum](int i) {
 		if (i % 2 == 0)
-			++sum; });
+			sum+=i; });
 }
 
