@@ -56,12 +56,33 @@ bool containsAllLetters3(const std::string& text)
 {
     std::set<char> alphabetChecker;
 
-    auto magicLambda = [&alphabetChecker](unsigned char c)
+    auto fillSetWithOnlyLetters = [&alphabetChecker](unsigned char c)
     {
-        //tutaj napisz kod 
+        if (c >= 65 && c <= 90)
+        {
+            alphabetChecker.insert(std::tolower(c));
+        }
+
+        if (c < 97 && c < 122)
+        {
+            alphabetChecker.insert(c);
+        }
     };
 
-    std::for_each(text.begin(), text.end(), magicLambda);
+    const unsigned char maleA = 65;
+    const unsigned char duzeA = 97;
+    const unsigned char maleZ = 90;
+    const unsigned char duzeZ = 122;
+
+    auto fillSetWithOnlyLetters2 = [&alphabetChecker, &maleA, &duzeA, &maleZ, &duzeZ ](unsigned char c)
+    {
+        if ((c >= maleA && c <= maleZ) || (c <= duzeA && c <= duzeZ))
+        {
+            alphabetChecker.insert(std::tolower(c));
+        }
+    };
+
+    std::for_each(text.begin(), text.end(), fillSetWithOnlyLetters);
 
     return alphabetChecker.size() == 26;
 }
