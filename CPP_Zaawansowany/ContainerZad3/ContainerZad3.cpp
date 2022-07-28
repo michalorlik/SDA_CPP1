@@ -29,6 +29,14 @@ unsigned char toLowerCase(unsigned char c)
     return std::tolower(c);
 }
 
+struct removeNonLetters2 //funktor
+{
+    bool operator() (unsigned char c)
+    {
+        return !((c >= 97 && c <= 122) || (c >= 65 && c <= 90));
+    }
+};
+
 bool containsAllLetters2(std::string text)
 {
     auto removeNonLetters = [](unsigned char c)
