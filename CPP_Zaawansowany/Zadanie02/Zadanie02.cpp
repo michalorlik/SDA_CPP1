@@ -102,5 +102,16 @@ int main()
 	std::for_each(numbers.cbegin(), numbers.cend(), [&sum](int i) {
 		if (i % 2 == 0)
 			sum+=i; });
+	//wersja z accumulate
+
+	auto sumOdd = [](int a, int b) {
+		if (b % 2 == 0)
+			return a + b;
+		else
+			return a; };
+
+	int result = std::accumulate(numbers.cbegin(), numbers.cend(), 0, sumOdd);
+
+	std::cout << std::endl << "RESULT = " << result << std::endl;
 }
 
