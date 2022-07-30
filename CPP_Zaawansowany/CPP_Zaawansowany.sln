@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TimeDate", "TimeDate\TimeDa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Random", "Random\Random.vcxproj", "{6CB6C078-B23B-47BD-B20C-DF4AB7336E38}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pliki", "Pliki\Pliki.vcxproj", "{0EE083B8-1BBD-4A04-9E0A-7DFAD20E9516}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{6CB6C078-B23B-47BD-B20C-DF4AB7336E38}.Release|x64.Build.0 = Release|x64
 		{6CB6C078-B23B-47BD-B20C-DF4AB7336E38}.Release|x86.ActiveCfg = Release|Win32
 		{6CB6C078-B23B-47BD-B20C-DF4AB7336E38}.Release|x86.Build.0 = Release|Win32
+		{0EE083B8-1BBD-4A04-9E0A-7DFAD20E9516}.Debug|x64.ActiveCfg = Debug|x64
+		{0EE083B8-1BBD-4A04-9E0A-7DFAD20E9516}.Debug|x64.Build.0 = Debug|x64
+		{0EE083B8-1BBD-4A04-9E0A-7DFAD20E9516}.Debug|x86.ActiveCfg = Debug|Win32
+		{0EE083B8-1BBD-4A04-9E0A-7DFAD20E9516}.Debug|x86.Build.0 = Debug|Win32
+		{0EE083B8-1BBD-4A04-9E0A-7DFAD20E9516}.Release|x64.ActiveCfg = Release|x64
+		{0EE083B8-1BBD-4A04-9E0A-7DFAD20E9516}.Release|x64.Build.0 = Release|x64
+		{0EE083B8-1BBD-4A04-9E0A-7DFAD20E9516}.Release|x86.ActiveCfg = Release|Win32
+		{0EE083B8-1BBD-4A04-9E0A-7DFAD20E9516}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
