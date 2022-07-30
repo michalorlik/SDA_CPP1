@@ -11,6 +11,20 @@ bool checkPESEL(const std::string& pesel)
     return std::regex_match(pesel, peselRegex);
 }
 
+std::string readEmail()
+{
+    std::cout << "Podaj adres e-mail: ";
+    std::string email("");
+    std::cin >> email;
+    return email;
+}
+
+bool checkEmail(const std::string& email)
+{
+    std::regex mailRegex("^[a-z0-9_.]{3,}@[a-z0-9_]+.(com|pl|edu)$");
+    return std::regex_match(email, mailRegex);
+}
+
 int main()
 {
     std::string pesel1("12121236548");
@@ -24,6 +38,9 @@ int main()
     std::cout << pesel3 << " wynik: " << checkPESEL(pesel3) << std::endl;
     std::cout << definatelyNotPesel << " wynik: " << checkPESEL(definatelyNotPesel) << std::endl;
     std::cout << notPesel2 << " wynik: " << checkPESEL(notPesel2) << std::endl;
+
+    std::string mail = readEmail();
+    std::cout << " Wynik sprawdzenia adresu email - " << checkEmail(mail);
 
 }
 
