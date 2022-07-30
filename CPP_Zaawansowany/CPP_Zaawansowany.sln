@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlgorithBrudnopis", "Algori
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Regex", "Regex\Regex.vcxproj", "{EA5CE606-B2F3-4E38-8DB9-CB4C9363D19A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TimeDate", "TimeDate\TimeDate.vcxproj", "{1C700DAA-F02F-47D3-AE44-8E788932476F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -201,6 +203,14 @@ Global
 		{EA5CE606-B2F3-4E38-8DB9-CB4C9363D19A}.Release|x64.Build.0 = Release|x64
 		{EA5CE606-B2F3-4E38-8DB9-CB4C9363D19A}.Release|x86.ActiveCfg = Release|Win32
 		{EA5CE606-B2F3-4E38-8DB9-CB4C9363D19A}.Release|x86.Build.0 = Release|Win32
+		{1C700DAA-F02F-47D3-AE44-8E788932476F}.Debug|x64.ActiveCfg = Debug|x64
+		{1C700DAA-F02F-47D3-AE44-8E788932476F}.Debug|x64.Build.0 = Debug|x64
+		{1C700DAA-F02F-47D3-AE44-8E788932476F}.Debug|x86.ActiveCfg = Debug|Win32
+		{1C700DAA-F02F-47D3-AE44-8E788932476F}.Debug|x86.Build.0 = Debug|Win32
+		{1C700DAA-F02F-47D3-AE44-8E788932476F}.Release|x64.ActiveCfg = Release|x64
+		{1C700DAA-F02F-47D3-AE44-8E788932476F}.Release|x64.Build.0 = Release|x64
+		{1C700DAA-F02F-47D3-AE44-8E788932476F}.Release|x86.ActiveCfg = Release|Win32
+		{1C700DAA-F02F-47D3-AE44-8E788932476F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
