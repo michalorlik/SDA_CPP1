@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlikiZadanie", "PlikiZadani
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZadDomowePliki", "ZadDomowePliki\ZadDomowePliki.vcxproj", "{F4B3436B-0AFE-45F4-8DF6-7D5AE554AC73}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlikiZadaniaBrudnopis", "PlikiZadaniaBrudnopis\PlikiZadaniaBrudnopis.vcxproj", "{BC1A822B-E147-441E-8F6B-39A47B81E2A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -251,6 +253,14 @@ Global
 		{F4B3436B-0AFE-45F4-8DF6-7D5AE554AC73}.Release|x64.Build.0 = Release|x64
 		{F4B3436B-0AFE-45F4-8DF6-7D5AE554AC73}.Release|x86.ActiveCfg = Release|Win32
 		{F4B3436B-0AFE-45F4-8DF6-7D5AE554AC73}.Release|x86.Build.0 = Release|Win32
+		{BC1A822B-E147-441E-8F6B-39A47B81E2A4}.Debug|x64.ActiveCfg = Debug|x64
+		{BC1A822B-E147-441E-8F6B-39A47B81E2A4}.Debug|x64.Build.0 = Debug|x64
+		{BC1A822B-E147-441E-8F6B-39A47B81E2A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC1A822B-E147-441E-8F6B-39A47B81E2A4}.Debug|x86.Build.0 = Debug|Win32
+		{BC1A822B-E147-441E-8F6B-39A47B81E2A4}.Release|x64.ActiveCfg = Release|x64
+		{BC1A822B-E147-441E-8F6B-39A47B81E2A4}.Release|x64.Build.0 = Release|x64
+		{BC1A822B-E147-441E-8F6B-39A47B81E2A4}.Release|x86.ActiveCfg = Release|Win32
+		{BC1A822B-E147-441E-8F6B-39A47B81E2A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
