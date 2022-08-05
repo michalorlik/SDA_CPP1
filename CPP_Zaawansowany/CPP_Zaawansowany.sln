@@ -57,6 +57,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stoiBrudnopis", "stoiBrudno
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multithreading", "Multithreading\Multithreading.vcxproj", "{E6BE111B-084F-457C-9CDF-0FF5D5C6D5A8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ListaZakupow", "ListaZakupow\ListaZakupow.vcxproj", "{CAEEFA98-246B-45D7-A2C1-77E43C5F5590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -281,6 +283,14 @@ Global
 		{E6BE111B-084F-457C-9CDF-0FF5D5C6D5A8}.Release|x64.Build.0 = Release|x64
 		{E6BE111B-084F-457C-9CDF-0FF5D5C6D5A8}.Release|x86.ActiveCfg = Release|Win32
 		{E6BE111B-084F-457C-9CDF-0FF5D5C6D5A8}.Release|x86.Build.0 = Release|Win32
+		{CAEEFA98-246B-45D7-A2C1-77E43C5F5590}.Debug|x64.ActiveCfg = Debug|x64
+		{CAEEFA98-246B-45D7-A2C1-77E43C5F5590}.Debug|x64.Build.0 = Debug|x64
+		{CAEEFA98-246B-45D7-A2C1-77E43C5F5590}.Debug|x86.ActiveCfg = Debug|Win32
+		{CAEEFA98-246B-45D7-A2C1-77E43C5F5590}.Debug|x86.Build.0 = Debug|Win32
+		{CAEEFA98-246B-45D7-A2C1-77E43C5F5590}.Release|x64.ActiveCfg = Release|x64
+		{CAEEFA98-246B-45D7-A2C1-77E43C5F5590}.Release|x64.Build.0 = Release|x64
+		{CAEEFA98-246B-45D7-A2C1-77E43C5F5590}.Release|x86.ActiveCfg = Release|Win32
+		{CAEEFA98-246B-45D7-A2C1-77E43C5F5590}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
