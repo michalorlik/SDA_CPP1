@@ -7,6 +7,6 @@ class Employee
 {
 
 private:
-
+	int generateID();
 };
 
