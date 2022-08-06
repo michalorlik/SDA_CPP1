@@ -32,7 +32,16 @@
     <ClInclude Include="Circle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Shape.h">
+    <ClInclude Include="Shape2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
