@@ -7,7 +7,7 @@
 class AreaCalculator
 {
 public:
-	AreaCalculator(std::vector<Shape2D*> shapes)
+	AreaCalculator(std::vector<std::shared_ptr<Shape2D>> shapes)
 		: _shapes(shapes)
 	{
 	}
@@ -30,7 +30,7 @@ public:
 	//}
 
 private:
-	std::vector<Shape2D*> _shapes;
+	std::vector<std::shared_ptr<Shape2D>> _shapes;
 };
 
 //class PerimeterCalculator : AreaCalculator

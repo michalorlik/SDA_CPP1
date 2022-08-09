@@ -16,6 +16,11 @@ public:
 		std::cout << "Summed area is equal to: " << _areaCalc.sum() << std::endl;
 	}
 
+	void outputFile()
+	{
+		//
+	}
+
 private:
 	AreaCalculator _areaCalc;
 };
