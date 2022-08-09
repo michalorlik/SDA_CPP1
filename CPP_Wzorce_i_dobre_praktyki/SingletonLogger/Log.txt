@@ -1,0 +1,15 @@
+SDA
+Yabadabadu
+2+2
+ERROR:KONIEC 
+SDA
+Yabadabadu
+2+2
+ERROR:KONIEC 
+fun() BEGIN
+fun() param x
+13
+bar() BEGIN
+bar() cos zrobila
+bar() END
+fun() END
