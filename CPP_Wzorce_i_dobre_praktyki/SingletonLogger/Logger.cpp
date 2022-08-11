@@ -2,7 +2,7 @@
 
 #include "Logger.h"
 
-Logger* Logger::_instance = nullptr; // inicjalizacja pola statycznego
+Logger* Logger::_instance = nullptr; //4.  inicjalizacja pola statycznego
 
 Logger* Logger::getInstance()
 {

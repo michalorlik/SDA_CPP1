@@ -13,3 +13,16 @@ bar() BEGIN
 bar() cos zrobila
 bar() END
 fun() END
+fun() BEGIN
+fun() param x
+13
+bar() BEGIN
+bar() cos zrobila
+bar() END
+fun() END
+fun() BEGIN
+fun() param x
+13
+bar() BEGIN
+bar() cos zrobila
+bar() END

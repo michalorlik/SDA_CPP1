@@ -21,6 +21,7 @@ void fun(int x)
 	logger->log(std::to_string(x));
 	bar();
 	logger->log("fun() END");
+	
 }
 
 

@@ -15,7 +15,9 @@ private:
 	{
 		_file = std::ofstream("Log.txt", std::ios::out | std::ios::app);
 	}
-	 
+	
+	~Logger() = delete;
+
 	//singleton nie ma destruktora, bo nigdy sie nie wywo³a 
 	static Logger* _instance; //2 prywatne statyczne pole wskazujace na samego siebie
 
