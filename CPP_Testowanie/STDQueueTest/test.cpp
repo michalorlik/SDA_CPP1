@@ -73,3 +73,51 @@ TEST(QueueTest, TestEmptyingQueue)
 
 	EXPECT_TRUE(testedQueue.empty());
 }
+
+//TEST FIXTURE:
+
+class StdQueueTest : public ::testing::Test
+{
+protected:
+	StdQueueTest() //c-tor
+	{
+		for (int i = 0; i < desiredQueueSize; ++i)
+		{
+			testedQueue.push(i);
+		}
+	}
+
+	const size_t desiredQueueSize = 5;
+	std::queue<int> testedQueue; //OBJECT UNDER TEST
+};
+
+TEST_F(StdQueueTest, TestAddingElemnts)
+{
+	EXPECT_EQ(testedQueue.size(), desiredQueueSize);
+}
+
+TEST_F(StdQueueTest, TestRemovingElements)
+{
+	EXPECT_EQ(testedQueue.size(), desiredQueueSize);
+	testedQueue.pop();
+	EXPECT_EQ(testedQueue.size(), desiredQueueSize - 1);
+}
+
+TEST_F(StdQueueTest, TestElementOrderUsingPop)
+{
+	for (int i = 0; i < desiredQueueSize; ++i)
+	{
+		EXPECT_EQ(testedQueue.front(), i);
+		testedQueue.pop();
+	}
+}
+
+TEST_F(StdQueueTest, TestEmptyingQueue)
+{
+	for (int i = 0; i < desiredQueueSize; ++i)
+	{
+		testedQueue.pop();
+	}
+
+	EXPECT_TRUE(testedQueue.empty());
+}
