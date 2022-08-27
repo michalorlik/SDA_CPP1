@@ -142,6 +142,7 @@
     <ClCompile Include="Zadanie7_StringStatistic.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="StringUtils.h" />
     <ClInclude Include="StringStatistics.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

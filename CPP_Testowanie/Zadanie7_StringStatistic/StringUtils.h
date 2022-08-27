@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 namespace StringUtils
 {
 
@@ -25,4 +27,13 @@ namespace StringUtils
 		return !isDigit(c) && !isLetter(c);
 	}
 
+}
+
+namespace StringUtilsWithCout
+{
+	bool isDigit(const char c)
+	{
+		std::cout << "Checking char " << c <<std::endl;
+		return (c >= 48 && c <= 57);
+	}
 }

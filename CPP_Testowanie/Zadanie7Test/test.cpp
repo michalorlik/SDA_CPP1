@@ -15,7 +15,7 @@ protected:
 	//{
 	//}
 
-	StringStatistics stringStatistics;
+	StringStatisticsWithUtils stringStatistics;
 };
 
 TEST_F(StringStatisticsTestEmpty, getLetterCount_Empty_ReturnsZero) 
@@ -43,7 +43,7 @@ protected:
 
 	void SetUp() override
 	{
-		stringStatistics = StringStatistics("AAaa123 &%$aa1");
+		stringStatistics = StringStatisticsWithUtils("AAaa123 &%$aa1");
 	}
 };
 
