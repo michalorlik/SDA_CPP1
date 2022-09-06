@@ -12,7 +12,7 @@ class EmployeeManager
 public:
 	EmployeeManager(std::shared_ptr<IEmployeeFileReader> fileReader, std::shared_ptr<IEmployeeFileWriter> fileWriter);
 
-	//void readDataFromFile(std::string filePath);
+	void readDataFromFile(std::string filePath);
 	//a) generateLogins
 	//b) generate passwords
 	//b) storeLoginDataToFile
