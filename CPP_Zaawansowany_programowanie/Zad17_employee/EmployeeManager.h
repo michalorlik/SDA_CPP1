@@ -13,6 +13,8 @@ public:
 	EmployeeManager(std::shared_ptr<IEmployeeFileReader> fileReader, std::shared_ptr<IEmployeeFileWriter> fileWriter);
 
 	void readDataFromFile(std::string filePath);
+	void saveToFile(std::string filePath);
+	void saveLogins(std::string filePath);
 	//a) generateLogins
 	//b) generate passwords
 	//b) storeLoginDataToFile

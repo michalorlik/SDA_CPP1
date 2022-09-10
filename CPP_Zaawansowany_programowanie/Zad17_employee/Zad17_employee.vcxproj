@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="EmployeeCSVReader.cpp" />
     <ClCompile Include="EmployeeCSVWriter.cpp" />
+    <ClCompile Include="EmployeeJSONWriter.cpp" />
     <ClCompile Include="EmployeeManager.cpp" />
     <ClCompile Include="Zad17_employee.cpp" />
   </ItemGroup>
@@ -148,9 +149,11 @@
     <ClInclude Include="Employee.h" />
     <ClInclude Include="EmployeeCSVReader.h" />
     <ClInclude Include="EmployeeCSVWriter.h" />
+    <ClInclude Include="EmployeeJSONWriter.h" />
     <ClInclude Include="EmployeeManager.h" />
     <ClInclude Include="IEmployeeFileReader.h" />
     <ClInclude Include="IEmployeeFileWriter.h" />
+    <ClInclude Include="json\json.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

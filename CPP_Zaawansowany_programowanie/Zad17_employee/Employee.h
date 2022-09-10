@@ -27,6 +27,23 @@ public:
 		}
 	}
 
+	static std::string toString(Gender g)
+	{
+		switch (g)
+		{
+		case Gender::FEMALE:
+			return "Female";
+			break;
+		case Gender::MALE:
+			return "Male";
+			break;
+		case Gender::UNKNOWN:
+		default:
+			return "Unknown";
+			break;
+		}
+	}
+
 	void setFirstName(const std::string name)
 	{
 		firstName = name;
@@ -52,6 +69,37 @@ public:
 		this->salary = salary;
 	}
 
+	std::string getFirstName() const
+	{
+		return firstName;
+	}
+
+	std::string getLastName() const
+	{
+		return lastName;
+	}
+
+	std::string getEmail() const
+	{
+		return email;
+	}
+
+	Gender getGender() const
+	{
+		return gender;
+	}
+
+	double getSalary() const
+	{
+		return salary;
+	}
+
+	std::string getLogin() const
+	{
+		//return login;
+		return "abcd";
+	}
+
 private:
 
 	std::string firstName;
@@ -59,6 +107,6 @@ private:
 	std::string email;
 	Gender gender;
 	double salary;
-	//......
+	std::string login;
 };
 

@@ -11,3 +11,13 @@ void EmployeeManager::readDataFromFile(std::string filePath)
 {
 	employees = _fileReader->readEmployees(filePath);
 }
+
+void EmployeeManager::saveToFile(std::string filePath)
+{
+	_fileWriter->writeEmployees(employees, filePath);
+}
+
+void EmployeeManager::saveLogins(std::string filePath)
+{
+	_fileWriter->writeLogin(employees, filePath);
+}
