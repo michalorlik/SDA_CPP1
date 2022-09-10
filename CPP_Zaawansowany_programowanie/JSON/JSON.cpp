@@ -6,7 +6,6 @@ using json = nlohmann::json;
 
 int main()
 {
-
     json j;
 
     j["imie"] = "Michal";
@@ -16,6 +15,6 @@ int main()
     j["praca"]["hexagon"] = "developer";
 
     std::ofstream o("ja.json");
-    o << j << std::endl;
+    o << std::setw(4) << j << std::endl;
 
 }
