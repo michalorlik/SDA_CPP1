@@ -1,0 +1,18 @@
+{
+    "imie": {
+        "drugie": "Zbigniew",
+        "pierwsze": "Michal"
+    },
+    "lista": [
+        1,
+        0,
+        2,
+        77
+    ],
+    "nazwisko": "Orlikowski",
+    "praca": {
+        "dodatkowa": "szklarz",
+        "hexagon": "developer",
+        "sda": "trener"
+    }
+}

@@ -25,16 +25,13 @@ void EmployeeJSONWriter::writeEmployees(std::vector<Employee> employees, std::st
 void EmployeeJSONWriter::writeLogin(std::vector<Employee> employees, std::string filePath)
 {
 	std::ofstream o(filePath);
-	json employeeArray;
+	json j;
 
 	for (const auto& empl : employees)
 	{
 		json employee{ {"email" , empl.getEmail()}, {"login" , empl.getLogin()} };
-		employeeArray.push_back(employee);
+		j["LoginData"].push_back(employee);
 	}
-
-	json j;
-	j["LoginData"] = employeeArray;
 
 	o << std::setw(4) << j << std::endl;
 }

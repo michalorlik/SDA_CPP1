@@ -42,7 +42,9 @@ int main()
     {
         //Zad::Student student;
         //elem.get_to(student);
-        studentsList.push_back(elem.get<Zad::Student>());
+        std::cout << "Wczytuje " << elem["firstName"];
+
+        studentsList.push_back(elem.get<Zad::Student>()); //to dzia³a dziêki funkcji from_json
     }
 
     std::for_each(studentsList.begin(), studentsList.end(), [](const Zad::Student& s) {
