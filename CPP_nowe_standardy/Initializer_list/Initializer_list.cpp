@@ -27,7 +27,7 @@ int main()
     Klasa obj{'S','D','A','1','2','3'};
 
     auto initList = { 'H','E','L','l','o' }; // auto oznacza std::initializer_list<char>
-    std::vector<char>(initList);
+    std::vector<char> vect(initList);
     Klasa obj2(initList);
 
     std::cout << obj.getValue() <<std::endl;
